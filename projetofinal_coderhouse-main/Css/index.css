@@ -262,10 +262,6 @@ width: 100%;
 
     
 
-    .lista-menu__link{
-        color: #F6DA33;
-    }
-
 #navegacao__left{
     display: none;
 }
@@ -282,9 +278,8 @@ width: 100%;
    margin: 0; 
   
  }
-
  
- .carrosel2, .carrossel__titulo{
+ .carrosel2, .carrossel__titulo2{
     display: block;
 }
 

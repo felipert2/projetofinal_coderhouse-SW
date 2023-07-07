@@ -58,7 +58,7 @@ body {
     flex-direction: column;
 }
 
-#container__section1 {
+#container__section01 {
     grid-area: section1;
     display: flex;
     color: aliceblue;
@@ -145,43 +145,18 @@ body {
 }
 
 
-
-
-
 @media screen and (max-width: 821px) {
 
-    body {
-        margin: 0;
-    }
 
     .grid {
-        margin: 0 5%;
-        background-color: rgba(0, 0, 0, 0.6);
+        
+        background-color: rgba(0,0,0,0.6);
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "cabecalho cabecalho"
-            "carrossel carrossel "
-            "carrossel2 carrossel2 "
             "section1 section1"
             "section2 section2"
             "rodape  rodape";
-    }
-
-    .carrosel {
-        display: block;
-        grid-area: carrossel;
-        position: relative;
-    }
-
-    .carrosel2 {
-        display: block;
-        grid-area: carrossel2;
-        position: relative;
-    }
-
-
-    .lista-menu__link {
-        color: #F6DA33;
     }
 
     #navegacao__left {
@@ -192,19 +167,23 @@ body {
         display: none;
     }
 
-    #container__section1 {
-        display: flex;
-        width: 100%;
+
+
+    #container__section01 {     
+        grid-area: section1;
+        display: flex;        
         color: aliceblue;
         flex-direction: column;
-        margin: 0;
-
+        margin: 0; 
+        width: 100%;
     }
 
-    #container__texto {
-        width: 100%;
-        padding: 0;
-        text-align: center;
+    .container__texto {
+   
+       text-align: center;
+       width: 100%;
+
+     
     }
 
     #titulo {
@@ -212,34 +191,48 @@ body {
         padding-bottom: 0;
     }
 
-    #texto {
+    #texto_jedi {
         font-size: 16px;
-        padding: 1em;
+        padding: 0.5em 0;
+        
     }
 
-    .container__imagem1 {
-        width: 100%;
-        text-align: center;
+    .container__imagem01 {
+        width: 100%;        
     }
 
-    .paragrafo__index__imagem1 {
-        width: 100%;
+    .paragrafo__imagem {     
+        width: 100%;       
+    }
+
+    #container__contato{
+        flex-direction: column-reverse;
+        grid-area: section2;
         padding: 0;
+        width: 100%;
     }
 
-
-    #container__contato {
-        display: none
+    .paragrafo_2_titulo{
+        font-size: 1.5em;
     }
 
-    .rodape__container {
-        padding-top: 1em;
+    .perspective_2_titulo{
+        font-size: 16px;
+        margin: 0.5em 0;
     }
 
-}
+    .container__foto{
+         padding: 0;
+         width: 100%;
+    }
+    
+    #imagem2{
+        width: 100%;
+    }
 
-#perspective_2_titulo {
-    color: #fed34f !important;
-    transform: perspective(300px) rotateX(25deg);
-    text-align: justify;
+    .rodape__container{
+        
+        width: 100%;
+    }
+
 }

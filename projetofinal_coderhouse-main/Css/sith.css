@@ -69,6 +69,11 @@ body {
 font-size: 32px;
 }
 
+.paragrafo_1_texto, .paragrafo_2_texto{
+    font-size: 20px;
+    padding: 1em 0;
+}
+
 
 .imagemCentro{
 width: 100%;
