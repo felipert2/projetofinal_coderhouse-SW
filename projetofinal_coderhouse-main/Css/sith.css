@@ -65,13 +65,10 @@ body {
     align-content: center;
 }
 
-.paragrafo_1_titulo {
-    color: #FFE81F;
+.paragrafo_1_titulo, .paragrafo_2_titulo  {
+font-size: 32px;
 }
 
-.paragrafo_2_titulo {
-    color: #FFE81F;
-}
 
 .imagemCentro{
 width: 100%;
