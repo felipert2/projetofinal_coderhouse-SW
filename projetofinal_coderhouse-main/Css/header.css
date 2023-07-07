@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+
+.cabecalho {   
+    grid-area: cabecalho;
+    display: flex;
+    margin: 2em 0;
+    position: relative;
+    align-items: center;
+    margin-left: 215px;
+}
+
+
+.links__cabecalho {
+
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    margin-left: 3vh;
+
+}
+
+.links__header {
+    text-decoration: none;
+    color: white;
+    padding: 0 0.6em;
+}
+
+.links__header:hover, .links__header:focus{
+
+    border-radius: 10px;
+   background:  #F6DA33;
+    box-shadow: 0 0 5px  #F6DA33, 0 0 25px  #F6DA33, 0 0 50px #F6DA33, 0 0 200px  #F6DA33;
+    color: black;
+}
+
+a#red:hover{
+    border-radius: 10px;
+   background:  red;
+    box-shadow: 0 0 5px  red, 0 0 25px  red, 0 0 50px red, 0 0 200px red;
+    color: black;
+}
+
+
+.container__cabecalho-mobile {
+    display: none;
+}
+
+
+@media screen and (min-width: 822px) and (max-width: 1600px) {
+    
+    .cabecalho{
+        margin-left: 190px;
+    }
+    
+    .links__header{
+        padding: 0.4em;
+    }
+
+    
+.links__cabecalho {  
+    font-size: 32px;   
+}
+}
+
+@media screen and (max-width: 821px) {
+
+    .cabecalho{
+        margin: 1em 0;
+    }
+
+.container__cabecalho-mobile{   
+    display: block;
+    display: flex;
+    align-items: center;
+    width: 90%;
+  
+}
+
+.cabeçalho__menu-hamburguer {
+
+    background-image: url("../Assets/menu.png");
+    display: inline-block;
+    background-repeat: no-repeat;    
+    
+} 
+
+.container__botao:checked ~ .container__label > .cabeçalho__menu-hamburguer{
+    background-image: url("../Assets/menu2.png");
+
+}
+
+
+
+    .links__header {
+        display: none;
+    }
+
+    .container__imagem-mobile {
+    width: 80%;
+    margin-left: 1em; 
+    }
+
+    .lista-menu {
+         display: none;
+         position: absolute;
+        z-index: 9999;
+        top: 100%;
+        width: 80vw;
+       
+    }
+
+    .lista-menu__item{
+        background-color: aliceblue;
+        padding: 1.2em 0;
+       text-align: center;
+       list-style: none;
+       background-image: url("../Assets/papel-de-parede-pixel-parede.jpg");
+       background-position: center ;
+    }
+
+    .lista-menu__link{
+        text-transform: uppercase; 
+        text-decoration: none; 
+        color: #F6DA33;
+        font-weight: 800;
+        font-size: 25px;
+        
+    }
+
+    .container__botao:checked~.lista-menu {
+        display: block;
+    }
+
+    .container__botao {
+        display: none;
+    }
+
+
+    .imagem__cabecalho {
+        display: none;
+    }
+
+    .container__imagem {
+        width: 100%;
+        padding: 1.3em;        
+
+    }
+
+}
