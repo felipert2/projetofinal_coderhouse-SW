@@ -143,6 +143,16 @@ body {
     display: none;
 }
 
+@media screen and (min-width: 822px) and (max-width: 1600px) {
+    #titulo,.paragrafo__02__titulo{
+        font-size: 32px;
+        }
+
+        .paragrafo_1_texto, .paragrafo_2_texto{
+            font-size: 22px;
+        }
+}
+
 
 
 @media screen and (max-width: 821px) {

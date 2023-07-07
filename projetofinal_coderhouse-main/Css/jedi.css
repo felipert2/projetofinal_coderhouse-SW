@@ -61,29 +61,25 @@ grid-area: section1;
 display: flex;
 color: aliceblue;
 justify-content: space-between;
-padding: 0 1em 0 1em;
+margin: 0 2.5em;
 }
 
-#titulo{
-    text-transform: uppercase;
-    padding-bottom: 1em;
+#titulo, .paragrafo_2_titulo{
+    text-transform: uppercase; 
     font-size: 40px;
     
 }
-#container__texto{
-    
-    flex-grow: 1;
+.container__texto{
     width: 50%;
-    padding: 0 2em 0 2em;
+
    }
 
-   #texto{
+   #texto_jedi, .perspective_2_titulo{
     font-size: 24px;
-    justify-content: flex-start
+    
    }
 #paragrafo__index__imagem{
-    margin: 50%
-    
+    margin: 50%    
    
 }
 
@@ -96,14 +92,12 @@ color: #FFE81F;
     grid-area: section2;
     display: flex;
     justify-content: space-between;
-    padding: 0 2.5em 0 3em;
-    
+    padding: 0 2.5em 0 3em;    
 }
 
 
-#imagem2{
-   
-    
+#navegacao__left, #navegacao__right{
+    display: none;
 }
 
 
@@ -112,41 +106,11 @@ color: #FFE81F;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 8em;
-    
-   
-    
+    padding-top: 2em;  
     
 }
 
-.rodape__container{
 
-}
-
-
-
-#texto__rodape{
-    
-}
-
-@media screen and (max-width: 821px)  {
-
-.grid{
-    background-color: rgba(0,0,0,0.6);
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "cabecalho cabecalho"
-    "section1 section1"
-    "section2 section2"
-    "rodape  rodape" ;
-}
-}
-
-#texto_jedi {
-    color: #fed34f !important;
-    transform: perspective(300px) rotateX(25deg);
-    text-align: justify;
-  }
 
   @media screen and (max-width: 821px)  {
 
